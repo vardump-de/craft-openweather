@@ -1,5 +1,5 @@
 {
-    "name": "vardump-de/openweather",
+    "name": "vardump-de/craft-openweather",
     "description": "providing openweather data for craft 3",
     "type": "craft-plugin",
     "version": "1.0.0",
