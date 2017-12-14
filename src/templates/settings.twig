@@ -1,0 +1,25 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * openweather plugin for Craft CMS 3.x
+ *
+ * openweather Settings.twig
+ *
+ * @author    rmdev
+ * @copyright Copyright (c) 2017 rmdev
+ * @link      https://github.com/vardump-de/craft-openweather
+ * @package   Openweather
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+
+{{ forms.textField({
+    label: 'OpenWeather Api Key',
+    instructions: 'Tragen Sie hier den Openweather Api Key ein',
+    id: 'apiKey',
+    name: 'apiKey',
+    value: settings['apiKey']})
+}}

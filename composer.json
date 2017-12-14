@@ -1,0 +1,53 @@
+{
+    "name": "vardump-de/openweather",
+    "description": "providing openweather data for craft 3",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "homepage": "https://github.com/vardump-de/craft-openweather",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "openweather",
+        "weather",
+        "craft3"
+    ],
+    "support": {
+        "issues": "https://github.com/vardump-de/craft-openweather/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rmdev",
+            "homepage": "https://github.com/rmdev"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC2",
+        "guzzlehttp/guzzle" : "~6.3.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "vardump\\openweather\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "openweather",
+        "handle": "openweather",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "???",
+        "components": {
+            "openweatherService": "vardump\\openweather\\services\\OpenweatherService"
+        },
+        "class": "vardump\\openweather\\Openweather"
+    }
+}
